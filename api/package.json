@@ -1,0 +1,16 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server -p 3001 -w db.json",
+    "dev": "concurrently -n 'client,server' -c 'cyan,green' \"cd ../client && npm start\" \"npm run server\" "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "json-server": "^0.16.3"
+  }
+}
