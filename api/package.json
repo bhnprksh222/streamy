@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": "json-server -p 3001 -w db.json",
-    "dev": "concurrently -n 'client,server' -c 'cyan,green' \"cd ../client && npm start\" \"npm run server\" "
+    "dev": "concurrently -n 'client,server,rtmpserver' -c 'cyan,green,bgYellow' \"cd ../client && npm start\" \"npm run server\" \"cd ../rtmpserver && npm start\" "
   },
   "author": "",
   "license": "ISC",
